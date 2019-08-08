@@ -35,7 +35,7 @@ body {
   color: #4CAF50
 }
 
-#quiz {
+#quiz, #results {
   display: none;
 }
 

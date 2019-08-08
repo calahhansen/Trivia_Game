@@ -1,17 +1,9 @@
 function unhide() {
   document.getElementById("quiz").style.display = "block";
+  document.getElementById("results").style.display = "block";
 }
 
-let timeleft = 12;
-let downloadTimer = setInterval(function () {
-  document.getElementById("time").innerHTML = timeleft + " seconds remaining";
-  timeleft -= 1;
-  if (timeleft < 0) {
-    clearInterval(downloadTimer);
-    console.log("Finished");
-    document.getElementById("time").innerHTML = "Finished";
-  }
-}, 1000);
+
 
 const myQuestions = [
   {
@@ -76,6 +68,8 @@ const myQuestions = [
   },
 ];
 
+let qContainer = document.getElementById('quiz');
+let rContainer = document.getElementById('results');
 
 
 function makeGame(questions, qContainer, rContainer) {
@@ -101,6 +95,8 @@ function makeGame(questions, qContainer, rContainer) {
       );
     }
     qContainer.innerHTML = output.join('');
+    showQs(questions, qContainer);
+    console.log(showQs);
   }
 
   function showRs(questions, qContainer, rContainer) {
@@ -109,9 +105,9 @@ function makeGame(questions, qContainer, rContainer) {
     const userAnswer = '';
     const numCorrect = 0;
 
-    for(let i=0; i<questions.length; i++) {
-      userAnswer = (aContainers[i].querySelector('input[name=question'+i+']:checked')||{}).value;
-      if(userAnswer === questions[i].correctAnswer) {
+    for (let i = 0; i < questions.length; i++) {
+      userAnswer = (aContainers[i].querySelector('input[name=question' + i + ']:checked') || {}).value;
+      if (userAnswer === questions[i].correctAnswer) {
         numCorrect++;
         aContainers[i].style.color = 'lightgreen';
       }
@@ -120,12 +116,17 @@ function makeGame(questions, qContainer, rContainer) {
       }
     }
     rContainer.innerHTML = numCorrect + ' out of ' + questions.length;
-
+    showRs(questions, qContainer, rContainer);
+    console.log(showRs);
   }
-
-  showQs(questions, qContainer);
-  console.log(showQs);
-
-  showRs(questions, qContainer, rContainer);
-  console.log(showRs);
 }
+let timeleft = 12;
+let downloadTimer = setInterval(function () {
+  document.getElementById("time").innerHTML = timeleft + " seconds remaining";
+  timeleft -= 1;
+  if (timeleft < 0) {
+    clearInterval(downloadTimer);
+    console.log("Finished");
+    document.getElementById("time").innerHTML = "Finished";
+  }
+}, 1000);

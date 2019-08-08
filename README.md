@@ -55,6 +55,109 @@ Having an active and healthy commit history on GitHub is important for your futu
 
 * Don't forget to include a countdown timer.
 
+        <div class="container">
+            <p>Q1. What is the purpose of the “groove” on a needle?</p>
+            <form>
+                <div class="radio">
+                    <input type="radio" name="optradio" checked>Allows you to "get in the mood" for sewing
+                </div>
+                <div class="radio">
+                    <input type="radio" name="optradio">Reduces the chance of the needle breaking
+                </div>
+                <div class="radio">
+                    <input type="radio" name="optradio">Glides easily through fabric
+                </div>
+                <div class="radio">
+                    <input type="radio" name="optradio">Allows thread to lie close to the needle
+                </div>
+            </form>
+        </div>
+        <div class="container">
+            <p>Q2. Selvage runs parallel to what grain in fabric?</p>
+            <form>
+                <div class="radio">
+                    <input type="radio" name="optradio" checked>Wheat
+                </div>
+                <div class="radio">
+                    <input type="radio" name="optradio">Warp
+                </div>
+                <div class="radio">
+                    <input type="radio" name="optradio">Amaranthe
+                </div>
+                <div class="radio">
+                    <input type="radio" name="optradio">Weft
+                </div>
+            </form>
+        </div>
+        <div class="container">
+            <p>Q3. What is finger pressing?</p>
+            <form>
+                <div class="radio">
+                    <input type="radio" name="optradio" checked>Pinky Promise
+                </div>
+                <div class="radio">
+                    <input type="radio" name="optradio">Press a seam with your finger
+                </div>
+                <div class="radio">
+                    <input type="radio" name="optradio">Sewing machine's presser foot
+                </div>
+                <div class="radio">
+                    <input type="radio" name="optradio">Thumb Wars
+                </div>
+            </form>
+        </div>
+        <div class="container">
+            <p>Q4. In quilting, what is meant by "loft"?</p>
+            <form>
+                <div class="radio">
+                    <input type="radio" name="optradio" checked>Puffiness
+                </div>
+                <div class="radio">
+                    <input type="radio" name="optradio">Hip to Gable
+                </div>
+                <div class="radio">
+                    <input type="radio" name="optradio">Height of throw
+                </div>
+                <div class="radio">
+                    <input type="radio" name="optradio">Dormer
+                </div>
+            </form>
+        </div>
+        <div class="container">
+            <p>Q5. "Quilt" is derived from the latin word culcita, which means?</p>
+            <form>
+                <div class="radio">
+                    <input type="radio" name="optradio" checked>Small Covering
+                </div>
+                <div class="radio">
+                    <input type="radio" name="optradio">Cushion Star
+                </div>
+                <div class="radio">
+                    <input type="radio" name="optradio">Crazy blanket
+                </div>
+                <div class="radio">
+                    <input type="radio" name="optradio">Stuffed Sack
+                </div>
+            </form>
+        </div>
+        <div class="container">
+            <p>Q6. The first spools of thread were made from?</p>
+            <form>
+                <div class="radio">
+                    <input type="radio" name="optradio" checked>Birch wood
+                </div>
+                <div class="radio">
+                    <input type="radio" name="optradio">Corks
+                </div>
+                <div class="radio">
+                    <input type="radio" name="optradio">Cardboard
+                </div>
+                <div class="radio">
+                    <input type="radio" name="optradio">Sticks and Stones
+                </div>
+            </form>
+        
+
 ### Option Two: Advanced Assignment (Timed Questions)
 
 ![Advanced](Images/2-advanced.jpg)
